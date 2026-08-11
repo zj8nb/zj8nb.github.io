@@ -1,0 +1,118 @@
+/* This makes padding and borders part of an element's total width. */
+* {
+    box-sizing: border-box;
+}
+
+/* These styles set the page colours, font, spacing and centred text. */
+body {
+    margin: 0;
+    background-color: #956d3097;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.7;
+    text-align: center;
+}
+
+/* This keeps the main content centred and prevents it becoming too wide. */
+header,
+main,
+footer {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding-right: 24px;
+    padding-left: 24px;
+}
+
+/* This creates generous space around the page introduction. */
+header {
+    padding-top: 100px;
+    padding-bottom: 80px;
+}
+
+/* All headings use a bold weight and consistent line spacing. */
+h1,
+h2,
+h3 {
+    margin-top: 0;
+    font-weight: 700;
+    line-height: 1.25;
+}
+
+/* The main page title is larger than the other headings. */
+h1 {
+    margin-bottom: 12px;
+    font-size: 3rem;
+}
+
+/* The subtitle is smaller and uses extra letter spacing. */
+.subtitle {
+    margin: 0;
+    color: #666666;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+}
+
+/* This visually separates each assignment section. */
+section {
+    margin-bottom: 120px;
+}
+
+/* Section headings use the second-largest text size. */
+h2 {
+    margin-bottom: 24px;
+    font-size: 2rem;
+}
+
+/* Subsection headings are smaller than section headings. */
+h3 {
+    margin-bottom: 12px;
+    font-size: 1.25rem;
+}
+
+/* This keeps paragraphs at a comfortable reading width. */
+p {
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+/* This adds space above topics within a larger section. */
+.subsection {
+    margin-top: 48px;
+}
+
+/* The footer uses smaller, softer text. */
+footer {
+    padding-top: 20px;
+    padding-bottom: 40px;
+    color: #666666;
+    font-size: 0.9rem;
+}
+
+/* These rules adjust spacing and text sizes on mobile screens. */
+@media (max-width: 600px) {
+
+    header,
+    main,
+    footer {
+        padding-right: 18px;
+        padding-left: 18px;
+    }
+
+    header {
+        padding-top: 70px;
+        padding-bottom: 60px;
+    }
+
+    h1 {
+        font-size: 2.25rem;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+    }
+
+    section {
+        margin-bottom: 85px;
+    }
+}
